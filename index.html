@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <title>Gem Counter</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body class="background">
+
+<!--This is the title of the game-->
+    <h1 class="gameTitle">Cyrstal Collector</h1>
+
+<!--This is the rules section-->
+    <div class="rules">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the value of each crystal.</p>
+    </div>
+
+<!--This is where the Random Number will be displayed-->
+    <div class="randomNumberBox">
+        <span class="randomNumber">0</span>
+    </div>
+
+<!--This is where the Wins and Losses will go-->
+    <div class="winLoseBox">
+        <p>Wins: <span class="wins">0</span></p>
+        <p>Losses: <span class="losses">0</span></p>
+    </div>
+
+<!--This is where the images of the crystals will be placed-->
+    <div class="crystalBox">
+        <button class="crystalOne">
+                <img src="assets/images/crystalOne.png" alt="Crystal">
+        </button>
+        <button class="crystalTwo">
+                <img src="assets/images/crystalTwo.png" alt="Crystal">
+        </button>
+        <button class="crystalThree">
+                <img src="assets/images/crystalThree.png" alt="Crystal">
+        </button>
+        <button class="crystalFour">
+                <img src="assets/images/crystalFour.png" alt="Crystal">
+        </button>
+    </div>
+
+<!--This is where you Users Score will go-->
+    <div>
+        <p class="scoreTitle">Your total score is:</p>
+
+        <div class="userScoreBox">
+            <span class="userScore">0</span>
+        </div>
+    </div>
+
+</body>
+</html>

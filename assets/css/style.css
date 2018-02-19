@@ -1,0 +1,103 @@
+.background{
+    background: url("../images/background.jpg");
+}
+
+.gameTitle{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 28%;
+    background-color: orange;
+    color: white;
+}
+
+.rules {
+    width: 47%;
+    background-color: #f1eddb;
+    color: #13e413;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+}
+
+.randomNumberBox {
+    background-color: #54f554;
+    color: purple;
+    width: 16%;
+    height: 14vh;
+    font-size: 6vw;
+    padding-left: 13%;
+    padding-top: 3%;
+    float: left;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
+
+.randomNumber{
+
+}
+
+.winLoseBox {
+    background-color: aqua;
+    color: green;
+    width: 13%;
+    height: 14vh;
+    float: left;
+    padding-left: 4%;
+}
+
+.wins{
+
+}
+
+.losses{
+
+}
+
+.crystalBox {
+    clear: both;
+    background-color: salmon;
+    width: 44%;
+    height: 12vh;
+    padding: 1%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+
+
+.crystalOne{
+
+}
+
+.crystalTwo{
+
+}
+
+.crystalThree{
+
+}
+
+.crystalFour{
+
+}
+
+.scoreTitle{
+    background-color: turquoise;
+    color: white;
+    width: 47%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.userScoreBox{
+    background-color: turquoise;
+    color: white;
+    padding-left: 20%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 10vh;
+    width: 27%;
+}
+
+.userScore{
+
+}
