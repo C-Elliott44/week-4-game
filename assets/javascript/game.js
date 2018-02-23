@@ -61,6 +61,34 @@ function putUserScoreInWindow(){
     $(".userScore").text(userScore);
 };
 
+function lossEvent(){
+    losses++;
+    putLossesInWindow();
+    randomNumberGenerator();
+    putRandomNumberInWindow();
+    randomNumberCrystalOne();
+    randomNumberCrystalTwo();
+    randomNumberCrystalThree();
+    randomNumberCrystalFour();
+    userScore = 0;
+    //putUserScoreInWindow();
+    $(".description").text("You Lose!")
+};
+
+function winEvent(){
+    wins++;
+    putWinsInWindow();
+    randomNumberGenerator();
+    putRandomNumberInWindow();
+    randomNumberCrystalOne();
+    randomNumberCrystalTwo();
+    randomNumberCrystalThree();
+    randomNumberCrystalFour();
+    userScore = 0;
+    //putUserScoreInWindow();
+    $(".description").text("You Win!")
+};
+
 //This will add the value of the crystals to the user score
 $(".crystalOne").click(function crystalOneClick() {
     userScore = userScore + crystalOne;
@@ -68,32 +96,12 @@ $(".crystalOne").click(function crystalOneClick() {
     $(".description").text("")
     if ( randomNumber === userScore) {
         setTimeout( function(){
-            wins++;
-            putWinsInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Win!")        
+            winEvent();        
         }, 0 );
     }
     else if ( randomNumber < userScore) {
         setTimeout( function(){
-            losses++;
-            putLossesInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Lose!")
+            lossEvent();
         })
     }
 });
@@ -104,32 +112,13 @@ $(".crystalTwo").click(function crystalTwoClick() {
     $(".description").text("")
     if ( randomNumber === userScore) {
         setTimeout( function(){
-            wins++;
-            putWinsInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Win!")        
+            winEvent();        
         }, 0 );
     }
+
     else if ( randomNumber < userScore) {
         setTimeout( function(){
-            losses++;
-            putLossesInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Lose!")
+            lossEvent();
         })
     }
 });
@@ -137,36 +126,15 @@ $(".crystalTwo").click(function crystalTwoClick() {
 $(".crystalThree").click(function crystalThreeClick() {
     userScore = userScore + crystalThree;
     putUserScoreInWindow();
-    
     $(".description").text("")
     if ( randomNumber === userScore) {
         setTimeout( function(){
-            wins++;
-            putWinsInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Win!")        
+            winEvent();        
         }, 0 );
     }
     else if ( randomNumber < userScore) {
         setTimeout( function(){
-            losses++;
-            putLossesInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Lose!")
+            lossEvent();
         })
     }
 });
@@ -177,32 +145,12 @@ $(".crystalFour").click(function crystalFourClick() {
     $(".description").text("")
     if ( randomNumber === userScore) {
         setTimeout( function(){
-            wins++;
-            putWinsInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Win!")        
+            winEvent();        
         }, 0 );
     }
     else if ( randomNumber < userScore) {
         setTimeout( function(){
-            losses++;
-            putLossesInWindow();
-            randomNumberGenerator();
-            putRandomNumberInWindow();
-            randomNumberCrystalOne();
-            randomNumberCrystalTwo();
-            randomNumberCrystalThree();
-            randomNumberCrystalFour();
-            userScore = 0;
-            //putUserScoreInWindow();
-            $(".description").text("You Lose!")
+            lossEvent();
         })
     }
 });
